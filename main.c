@@ -46,12 +46,14 @@ int main(int argc, char *argv[])
 			line++;
 			continue;
 		}
+
 		else if (strcmp(token, "push") == 0)
 		{
 			ispush = 1;
 			token = strtok(NULL, "\n\t\a\r ;:");
 			continue;
 		}
+
 		else
 		{
 			if (get_op_func(token) != 0)
@@ -68,7 +70,8 @@ int main(int argc, char *argv[])
 		line++;
 		token = strtok(NULL, "\n\t\a\r ;:");
 	}
-	free_dlist(&h); free(buffer);
+	free_dlist(&h);
+	free(buffer);
 	close(fd);
 	return (0);
 }
