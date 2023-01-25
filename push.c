@@ -1,37 +1,9 @@
-
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@renoxvi 
-Faitholo
-/
-monty
-Public
-Fork your own copy of Faitholo/monty
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-monty/push.c
-@Faitholo
-Faitholo made files executable
-Latest commit 6824306 on Oct 3, 2021
- History
- 1 contributor
-Executable File  44 lines (43 sloc)  862 Bytes
-
-#include "monty.h"
+"monty.h"
 #include <string.h>
 /**
 *push - add a neode in the list
 *@stack: pointer to a pointer to the doubly linked list
+*@n: character
 *@line_number: line where there is an error
 *Return: nothing
 */

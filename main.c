@@ -77,6 +77,7 @@ find_opcode(&stack, opcode, line_number);
 }
 fclose(mf);
 free(buff);
+
 while (stack != NULL)
 {
 current = stack;
